@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Press+Start+2P&display=swap");
+
+:root {
+  --page-bg: #f8f3dc;
+  --text-color: #333333;
+  --blue: #2c3e50;
+  --surface-color: #ffffff;
+  --muted-color: #555555;
+  --pokemon-yellow: #ffcb05;
+  --pokemon-yellow-lighter: #ffb12a;
+  --primary-color: #3bcca1;
+  --primary-hover-color: #32b08a;
+  --danger-color: #ff5959;
+  --danger-hover-color: #e04848;
+  --footer-text-color: #ecf0f1;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  padding-top: 80px;
+}
+
+/* titulos e headings*/
+h1,
+h2,
+h3,
+.navbar-brand,
+.btn {
+  font-family: "Outfit", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+/* Navbar*/
+.navbar {
+  background-color: var(--surface-color) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: var(--muted-color) !important;
+  transition: color 0.2s ease;
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: var(--pokemon-yellow) !important;
+}
+
+/* Cards e Containers */
+.card,
+.welcome,
+.modal-content {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover-color);
+  border-color: var(--primary-hover-color);
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn-danger:hover {
+  background-color: var(--danger-hover-color);
+  border-color: var(--danger-hover-color);
+}
+
+#new-one-button,
+#new-battle {
+  background-color: var(--pokemon-yellow);
+  border: var(--primary-hover-color);
+  color: var(--page-bg);
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+#new-one-button:hover,
+#new-battle:hover {
+  background-color: var(--pokemon-yellow-lighter);
+  color: var(--page-bg);
+  font-weight: 600;
+}
+
+/* Footer Styling */
+.site-footer {
+  background-color: var(--blue);
+  color: var(--footer-text-color);
+  padding: 40px 20px;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: var(--pokemon-yellow);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer p {
+  margin-bottom: 6px;
+}
